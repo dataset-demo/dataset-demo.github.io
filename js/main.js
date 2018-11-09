@@ -65,9 +65,9 @@ var renderDataset = function(datasetList, searchString="") {
             // Source URI
             var labelDiv = document.createElement('label')
             labelDiv.className = "title"
-            labelDiv.innerHTML = "sourceURI"
+            labelDiv.innerHTML = "SourceURI"
             var sourceDiv = document.createElement('a')
-            sourceDiv.className = "page-link"
+            sourceDiv.className = "sourceuri-link"
             sourceDiv.innerHTML = dataset.sourceURI
             sourceDiv.href = dataset.sourceURI
             sourceDiv.target = "_blank"

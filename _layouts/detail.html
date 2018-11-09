@@ -86,10 +86,10 @@
                             <label>SourceURI</label>
                         </div>
                         <div class="col-right">
-                            <a href="{{ dataset["datasetDoc"]["about"]["sourceURI"] }}" target="_blank">{{ dataset["datasetDoc"]["about"]["sourceURI"] }}</a>
+                            <a class="sourceuri-link" href="{{ dataset["datasetDoc"]["about"]["sourceURI"] }}" target="_blank">{{ dataset["datasetDoc"]["about"]["sourceURI"] }}</a>
                         </div>
                     </div>
-                    {% if dataset["datasetDoc"]["about"]["approximateSize"] %}
+                    {% if dataset["datasetDoc"]["about"]["approximateSize"] != '' %}
                     <div class="row">
                         <div class="col-left">
                             <label>ApproximateSize</label>
@@ -130,7 +130,7 @@
                     </div>
                     <div class="row">
                         <div class="col-left">
-                            <label>hyperparameters</label>
+                            <label>Hyperparameters</label>
                         </div>
                         <div class="col-right">
                             {% if dataset["pipeline"]["hyperparameters"] %}

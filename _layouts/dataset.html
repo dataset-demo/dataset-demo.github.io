@@ -1,0 +1,175 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="title" content="{{ page.title }}">
+        <meta name="description" content="{{ page.description }}">
+        <meta name="keywords" content="{{ page.keywords }}">
+
+        <meta name="og:title" content="{{ page.title }}">
+        <meta name="og:url" content="{{ page.url }}">
+        <!-- <meta name="og:image" content="{{ page.logo }}"> -->
+        <meta name="og:description" content="{{ page.description }}">
+
+        <meta name="MIT:card" content="summary" />
+        <meta name="MIT:site" content="{{ page.url }}" />
+        <meta name="MIT:title" content="{{ page.title }}" />
+        <meta name="MIT:description" content="{{ page.description }}" />
+        <!-- <meta name="MIT:image" content="{{ page.logo }}" /> -->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta http-equiv='Expires' content='0'>
+        <meta http-equiv='Pragma' content='no-cache'>
+        <meta http-equiv='Cache-Control' content='no-cache'>
+        <meta http-equiv='imagetoolbar' content='no'>
+
+        <title>{{ page.title }}</title>
+        <link rel="shortcut icon" type="image/png" href="assets/dai-favicon.png" />
+
+        <!-- Feather CSS -->
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/feather-core.css"/>
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/feather-component-grid.css"/>
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/feather-component-button.css"/>
+
+        <!-- Main CSS -->
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css"/>
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/{{ page.custom_css }}"/>
+
+    </head>
+
+    <body>
+        <div class="home-header">
+            <div class="header-logo">
+                <img src="assets/logo-1.png" />
+            </div>
+            <div class="header-information">
+                <div class="information-content">
+                    <h1>Lorem ipsum dolor sit amet</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt</p>
+                </div>
+            </div>
+        </div>
+        <div class="home-filter">
+            <div class="filter-content">
+                <div class="row-title">
+                    <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</h1>
+                </div>
+                <div class="row-switch">
+                    <div class="switch-filter">
+                        <button class="btn-filter"><img src="assets/icon-filter-active.svg" /></button>
+                    </div>
+                    <div class="switch-search">
+                        <button class="btn-search"><img src="assets/icon-search-inactive.svg" /></button>
+                    </div>
+                </div>
+                <div class="row-form">
+                    <div class="form-inputs">
+                        <div class="left-column">
+                            <div class="form-group">
+                                <label class="form-label">Name</label>
+                                <input type="text" name="name" class="form-control" placeholder="Search by data name" />
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Data Type</label>
+                                <select name="datatype" class="form-control">
+                                    <option>Please choose data type</option>
+                                    <option value="1">DataType 01</option>
+                                    <option value="2">DataType 02</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="right-column">
+                            <div class="form-group">
+                                <label class="form-label">Domain</label>
+                                <select name="domain" class="form-control">
+                                    <option>Please choose a domain</option>
+                                    <option value="1">DataType 01</option>
+                                    <option value="2">DataType 02</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Task Type</label>
+                                <select name="domain" class="form-control">
+                                    <option>Please choose Task Type</option>
+                                    <option value="1">DataType 01</option>
+                                    <option value="2">DataType 02</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-button">
+                        <button class="btn-submit"><img src="assets/icon-filter-submit.svg" /></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="home-dataset">
+            <div class="dataset-title">
+                <h1>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</h1>
+            </div>
+            <div class="dataset-list">
+                <div class="dataset-item">
+                    <div class="row">
+                        <div class="row-left"><label>Name</label></div>
+                        <div class="row-right"><a href="#">Hand geometry: wrist breadth prediction dataset</a></div>
+                    </div>
+                    <div class="row">
+                        <div class="row-left"><label>Description</label></div>
+                        <div class="row-right">
+                            <p>There are a total of 112 raw hand image files, each corresponding to the left hand of one
+of \nthe 112 different users:</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row-left"><label>sourceURI</label></div>
+                        <div class="row-right"><a href="#" class="sourceuri-link" target="_blank">https://zenodo.org/record/17487/export/hx#.WZHDMnonrrc</a></div>
+                    </div>
+                    <div class="row">
+                        <div class="row-detail">
+                            <a href="" class="btn-view-detail">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="dataset-item">
+                    <div class="row">
+                        <div class="row-left"><label>Name</label></div>
+                        <div class="row-right"><a href="#">185_baseball_dataset</a></div>
+                    </div>
+                    <div class="row">
+                        <div class="row-left"><label>Description</label></div>
+                        <div class="row-right">
+                            <p>Jeffrey S. Simonoff, Analyzing Categorical Data, Springer-Verlag, New York, 2003 Database of baseball players and play statistics, including 'Games_played </p>
+                        </div>
+                    </div>
+                    <div class="row row-sourceuri">
+                        <div class="row-left"><label>sourceURI</label></div>
+                        <div class="row-right"><a href="#" class="sourceuri-link" target="_blank">http://www.stern.nyu.edu/~jsimonof/AnalCatData</a></div>
+                    </div>
+                    <div class="row">
+                        <div class="row-detail">
+                            <a href="" class="btn-view-detail">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="footer">
+            <div class="Grid container">
+
+                <div class="Grid-cell footer-cell u-size1of4">
+                    <a class="foot-link" href="">© 2018 Data to AI Group.</a>
+                </div>
+
+            </div>
+        </div> <!-- End of Footer -->
+
+        <script src="{{ site.baseurl }}/js/{{ page.custom_js }}"></script>
+
+        {% include ga.html %}
+    </body>
+</html>
