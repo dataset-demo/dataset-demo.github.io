@@ -427,6 +427,10 @@
                         color: #0266d6;
                         position: relative;
                         margin-right: 36px;
+                        &:hover {
+                            cursor: pointer;
+                            text-decoration: none;
+                        }
                         &:before {
                             content: ' ';
                             border-bottom: 1px solid #0266d6;
