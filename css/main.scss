@@ -18,6 +18,14 @@
     font-weight: normal;
     src: url('/fonts/AvenirNextLTPro-Bold.woff') format('woff');
 }
+@font-face {
+    font-family: 'Courier New';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Courier New'), local('CourierNew-Regular'),
+        url('/fonts/courier-new.woff') format('woff'),
+        url('/fonts/courier-new.ttf') format('truetype');
+}
 body {
     font-family: 'Avenir-Next-Regular';
     font-size: 18px;
@@ -90,3 +98,21 @@ table {
 }
 @import 'index';
 @import 'detail';
+.header-logo {
+    width: 940px;
+    height: 100px;
+    margin: 0 auto;
+    @media screen and (min-width: 960px) and (max-width: 1023px){
+        width: 900px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 959px){
+        width: 700px;
+    }
+    @media screen and (max-width: 767px){
+        width: 100%;
+    }
+    img {
+        width: 215px;
+        object-fit: cover;
+    }
+}

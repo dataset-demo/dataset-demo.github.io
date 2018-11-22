@@ -48,11 +48,11 @@ var renderDataset = function(datasetList, searchString="") {
             var descriptionDiv = document.createElement('p')
             descriptionDiv.className = "content-area"
             descriptionDiv.innerHTML = dataset.description
-            colLeftDiv.appendChild(labelDiv)
-            colRightDiv.appendChild(descriptionDiv)
-            rowDiv.appendChild(colLeftDiv)
-            rowDiv.appendChild(colRightDiv)
-            datasetDiv.appendChild(rowDiv)
+            //colLeftDiv.appendChild(labelDiv)
+            //colRightDiv.appendChild(descriptionDiv)
+            //rowDiv.appendChild(colLeftDiv)
+            //rowDiv.appendChild(colRightDiv)
+            //datasetDiv.appendChild(rowDiv)
 
             // Row Source URI
             var rowDiv = document.createElement('div')
