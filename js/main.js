@@ -237,6 +237,10 @@ function filterSubmit(){
     renderDataset(newDatasetList, searchString=searchString)
 }
 
+// Set current year for copyright
+var currentYear = (new Date()).getFullYear();
+document.getElementById('copyright-year').innerHTML = currentYear;
+
 /* Search implementation ends */
 
 $(document).ready(function(){
