@@ -304,6 +304,16 @@ $(window).scroll(function() {
   } else {
     $('#return-to-top').fadeOut(200); // Else fade out the arrow
   }
+
+  //Scroll To Loadmore
+  var scrollHeight = $(this).scrollTop();
+  var currentHeight = $(document).height() - $(this).height() - 100;
+  if(scrollHeight > currentHeight) {console.log("scroll")
+    $('.more-box:hidden').slice(0, 10).slideDown();
+    if ($('.more-box:hidden').length == 0) {
+      $('#load-more').fadeOut('slow');
+    }
+  }
 });
 $('#return-to-top').click(function() {
   // When arrow is clicked

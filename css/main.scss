@@ -103,20 +103,20 @@ table {
     height: 100px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding-top: 20px;
+    padding-top: 0;
     a {
-        margin-top: 40px;
+        margin-top: 30px;
     }
     .logo-mit {
+        margin-right: 15px;
         img {
-            width: 100px;
+            width: 110px;
         }
     }
-    .logo-data-ai {
+    .logo-dai {
         img {
-            width: 180px;
+            width: 100%;
         }
     }
     @media screen and (min-width: 1440px){

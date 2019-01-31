@@ -43,8 +43,8 @@
     <body>
         <div class="home-header">
             <div class="header-logo">
-                <a href="/" class="home-page-url logo-mit"><img src="/assets/logo-dai.png" /></a>
-                <a href="/" class="home-page-url logo-data-ai"><img src="/assets/logo-2.png" /></a>
+                <a href="/" class="home-page-url logo-mit"><img src="/assets/mit-logo.png" /></a>
+                <a href="/" class="home-page-url logo-dai"><img src="/assets/logo-2.png" /></a>
             </div>
             <div class="header-information">
                 <div class="information-content">
@@ -53,6 +53,12 @@
                 </div>
             </div>
         </div>
+        
+        <div class="home-dataset">
+            {% include _about.html %}
+            {% include _faq.html %}
+        </div>
+        
         <div class="home-filter">
             <div class="filter-content">
                 <div class="row-title" style="display: none;">
@@ -126,10 +132,6 @@
         <div class="home-dataset">
             
             {{ content }}
-
-            {% include _about.html %}
-
-            {% include _faq.html %}
             
         </div>
 
